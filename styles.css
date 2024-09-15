@@ -1,0 +1,140 @@
+/* Global reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included within element width/height */
+}
+
+/* Styling the h5 element */
+h5 {
+    background-color: antiquewhite; /* Sets background color */
+    padding: 10px; /* Adds padding inside the element */
+    width: 100%; /* Makes the h5 span the full width of the page */
+    position: fixed; /* Fixes the h5 element at the top of the viewport */
+    top: 0; /* Positions the element exactly at the top */
+    z-index: 1000; /* Ensures the h5 stays on top of other content */
+    height: 35px; /* Defines the height of the h5, making sure it's consistent */
+}
+.Options{
+    text-align: center;
+    background-color: #333;
+    position: fixed; /* Fixes the ul relative to the viewport */
+    top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
+    z-index: 999; /* Keeps the ul above other content but below the h5 */
+    width: 100%;
+}
+.Options > h1{
+    color: whitesmoke;
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+/* Styles for the <ul> navigation list */
+.Options > ul{
+    display: flex; /* Aligns the list items in a row */
+    list-style-type: none; /* Removes default bullets from the list */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    width: 100%; /* Ensures the list spans the full width */
+    overflow: auto; /* Ensures no content spills outside the box */
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Styling for the links within the list items */
+li a {
+    display: block; /* Makes the anchor tag behave like a block element */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers the text */
+    padding: 16px; /* Adds space inside the anchor element */
+    text-decoration: none; /* Removes underline from links */
+    font-size: smaller;
+}
+
+/* Hover effect for the links */
+li a:hover {
+    background-color: gray; /* Changes background color when hovered */
+    color: rgb(211, 247, 246); /* Changes text color when hovered */
+    text-decoration: underline; /* Adds underline when hovered */
+}
+
+/* General body styling */
+body {
+    overflow-x: hidden;
+    background-image: url(elegant-skin-care-banner-design.jpg); /* Sets a background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    background-size: cover; /* Makes sure the background image covers the whole page */
+    font-family: Arial, sans-serif; /* Sets the font for the body */
+    background-color: #f0f0f0; /* Sets a fallback background color */
+    color: #333; /* Sets text color */
+    text-align: center; /* Centers the content */
+    padding: 0; /* Removes padding around the body */
+}
+body.contact{
+    background-image: none; /* Remove background image for contact page */
+    background-color: #f0f0f0; /* Fallback background color */
+}
+.text-overlay a{
+    color: white; /* Text color */
+    font-size: 15px; /* Text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
+}
+.text-overlay p {
+    color: white; /* Text color */
+    font-size: 15px; /* Text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
+}
+.contact img{
+    width: 100%;
+    height: 650px;
+    max-height: 1000px;
+    object-fit: cover;
+}
+.text-overlay {
+    color: white;
+    font-size: 24px; /* Text size */
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 90%; /* Center horizontally */
+    transform: translate(-90%, -30%); /* Center the text */
+    text-align: center; /* Center text alignment */
+    width: 100%; /* Ensure text is centered horizontally */
+    padding: 10px; /* Optional padding around text */
+}
+.text-overlay p{
+    margin: 10px 0;
+    margin-bottom: 10px;
+}
+.contact-container {
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add space between form and contact details */
+    padding: 20px; /* Add padding around the container */
+}
+
+.contact-container form {
+    margin-left: 20px;
+    text-align: left;
+    flex: 1; /* Allow the form to take up equal or more space */
+}
+
+.contact-container .contact-details {
+    flex: 1; /* Allow the contact details to take up equal or more space */
+    text-align: left;
+    margin-left: 400px;
+}
+
+footer {
+    background-color: whitesmoke;
+}
+.fa-facebook {
+    font-size: 30px; /* Adjust the size */
+    color: #4267B2;  /* Facebook's blue color */
+    margin-right: 10px; /* Optional spacing */
+}
+.fa-whatsapp{
+    font-size: 30px; /* Adjust the size */
+    color: green;  /* Facebook's blue color */
+    margin-right: 10px; /* Optional spacing */
+}
