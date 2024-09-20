@@ -87,7 +87,7 @@ body.contact{
 }
 .contact img{
     width: 100%;
-    height: 650px;
+    height: 500px;
     max-height: 1000px;
     object-fit: cover;
 }
@@ -95,7 +95,7 @@ body.contact{
     color: white;
     font-size: 24px; /* Text size */
     position: absolute; /* Position text over the image */
-    top: 50%; /* Center vertically */
+    top: 45%; /* Center vertically */
     left: 90%; /* Center horizontally */
     transform: translate(-90%, -30%); /* Center the text */
     text-align: center; /* Center text alignment */
@@ -127,6 +127,7 @@ body.contact{
 
 footer {
     background-color: whitesmoke;
+    bottom: 0%;
 }
 .fa-facebook {
     font-size: 30px; /* Adjust the size */
@@ -137,4 +138,113 @@ footer {
     font-size: 30px; /* Adjust the size */
     color: green;  /* Facebook's blue color */
     margin-right: 10px; /* Optional spacing */
+}
+.location {
+    position: relative;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.middle-right{
+    position: absolute;
+    border: black;
+    border-radius: 300px;
+    background-color: #97b7c8;
+    top: 30%;
+    right: 20px; /* Adjust the position */
+    width: 500px; /* Box width */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border: 2px solid #333; /* Solid border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    padding: 20px; /* Padding inside the box */
+}
+.directions a {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.directions a:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+.footer-content{
+    display: flex;
+    padding: 50px;
+    background-color: antiquewhite;
+    list-style-type: none;
+}
+.footer-content ul li a{
+    list-style-type: none;
+    text-align: left;
+    color: #333;
+    font-size: smaller;
+    gap: 10px;
+}
+.footer-content ul{
+    list-style-type: none;
+}
+Options{
+    top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
+    z-index: 999; /* Keeps the ul above other content but below the h5 */
+}
+/* Styling for the links within the list items */
+li a {
+    display: block; /* Makes the anchor tag behave like a block element */
+    padding: 16px; /* Adds space inside the anchor element */
+    text-decoration: none; /* Removes underline from links */
+    font-size: smaller;
+}
+
+/* Hover effect for the links */
+li a:hover {
+    background-color: gray; /* Changes background color when hovered */
+    color: rgb(211, 247, 246); /* Changes text color when hovered */
+    text-decoration: underline; /* Adds underline when hovered */
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust min-width */
+    gap: 30px; /* Increase spacing between products */
+    padding: 40px; /* Add padding around the grid */
+    margin-top: 100px; /* Push the content down by 100px to avoid overlap */
+    background-color: black;
+    place-items: center;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Slightly lift the product on hover */
 }
