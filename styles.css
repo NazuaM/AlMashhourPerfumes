@@ -5,59 +5,6 @@
     box-sizing: border-box; /* Ensures padding and border are included within element width/height */
 }
 
-/* Styling the h5 element */
-h5 {
-    background-color: antiquewhite; /* Sets background color */
-    padding: 10px; /* Adds padding inside the element */
-    width: 100%; /* Makes the h5 span the full width of the page */
-    position: fixed; /* Fixes the h5 element at the top of the viewport */
-    top: 0; /* Positions the element exactly at the top */
-    z-index: 1000; /* Ensures the h5 stays on top of other content */
-    height: 35px; /* Defines the height of the h5, making sure it's consistent */
-}
-.Options{
-    text-align: center;
-    background-color: black;
-    position: fixed; /* Fixes the ul relative to the viewport */
-    top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
-    z-index: 999; /* Keeps the ul above other content but below the h5 */
-    width: 100%;
-}
-.Options > h1{
-    color: whitesmoke;
-    padding: 20px;
-    padding-bottom: 0%;
-}
-
-/* Styles for the <ul> navigation list */
-.Options > ul{
-    display: flex; /* Aligns the list items in a row */
-    list-style-type: none; /* Removes default bullets from the list */
-    margin: 0; /* Removes any default margin */
-    padding: 0; /* Removes any default padding */
-    width: 100%; /* Ensures the list spans the full width */
-    overflow: auto; /* Ensures no content spills outside the box */
-    justify-content: center;
-    gap: 100px;
-}
-
-/* Styling for the links within the list items */
-li a {
-    display: block; /* Makes the anchor tag behave like a block element */
-    color: white; /* Sets text color to white */
-    text-align: center; /* Centers the text */
-    padding: 16px; /* Adds space inside the anchor element */
-    text-decoration: none; /* Removes underline from links */
-    font-size: smaller;
-}
-
-/* Hover effect for the links */
-li a:hover {
-    background-color: gray; /* Changes background color when hovered */
-    color: rgb(211, 247, 246); /* Changes text color when hovered */
-    text-decoration: underline; /* Adds underline when hovered */
-}
-
 /* General body styling */
 body.contact{
     overflow-x: hidden;
@@ -163,7 +110,7 @@ body.contact{
     background-color: #0056b3; /* Darken on hover */
 }
 
-Options{
+.Options{
     top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
     z-index: 999; /* Keeps the ul above other content but below the h5 */
 }
@@ -340,39 +287,6 @@ li a:hover {
     transform: translateY(-5px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********************************INTRO BEGINS******************************/
 .intro {
     max-width: 1200px; /* Limits the width for better readability on larger screens */
@@ -405,6 +319,146 @@ li a:hover {
 
 /********************************INTRO ENDS******************************/
 
+/****************************30ML WHITE BEGINS ********************************/
+.thirtyml-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduce min width */
+    padding: 20px; /* Adjusted for better spacing */
+    margin: 20px auto;
+    place-items: center;
+    gap: 5px 15px; /* Reduce gap between items */
+    margin-top: 100px;
+    background-color: rgba(125, 125, 125, 0.833);
+    height: 1800px;
+}
+
+.ml30 {
+    width: 300px; /* Adjusted width */
+    height: 300px; /* Set to auto for dynamic height */
+    border-radius: 20px;
+    padding: 10px; /* Reduced padding */
+    display: flex; /* Change to flex for better alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center align items */
+    gap: 0 20px; /* Add a little space between items */
+}
+
+.ml30 img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 300px; /* Set max height for images */
+    object-fit: contain;
+}
+
+.ml30 > h3 {
+    font-size: 1.2em;
+    font-family: 'Times New Roman';
+    color: rgb(30, 56, 56);
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 1em; /* Adjust price text size if needed */
+    color: rgb(30, 56, 56);
+    margin: 0; /* No margin for compactness */
+}
+.ml30:hover{
+    transform: translateY(-5px);
+}
+/****************************30ML WHITE ENDS ********************************/
+
+/************************HEADER BEGINS*********************/
+
+/* Styling the h5 element */
+h5 {
+    background-color: antiquewhite; /* Sets background color */
+    padding: 10px; /* Adds padding inside the element */
+    width: 100%; /* Makes the h5 span the full width of the page */
+    position: fixed; /* Fixes the h5 element at the top of the viewport */
+    top: 0; /* Positions the element exactly at the top */
+    z-index: 1000; /* Ensures the h5 stays on top of other content */
+    height: 35px; /* Defines the height of the h5, making sure it's consistent */
+}
+.Options{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    position: fixed; /* Fixes the ul relative to the viewport */
+    top: 90px; /* Places the ul just below the h5 by matching its height (50px) */
+    z-index: 998; /* Keeps the ul above other content but below the h5 */
+    width: 100%;
+}
+.first > h1{
+    text-align: center;
+    background-color: black;
+    position: fixed; /* Fixes the ul relative to the viewport */
+    top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
+    z-index: 999; /* Keeps the ul above other content but below the h5 */
+    width: 100%;
+    color: whitesmoke;
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+/* Styling for the links within the list items */
+.Options a {
+    float: left;
+    display: block; /* Makes the anchor tag behave like a block element */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers the text */
+    padding: 14px 90px; /* Adds space inside the anchor element */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 20px;
+}
+
+/* Hover effect for the links */
+.Options a:hover, .dropdown .dropbtn:hover {
+    background-color: gray; /* Changes background color when hovered */
+    color: rgb(211, 247, 246); /* Changes text color when hovered */
+    text-decoration: underline; /* Adds underline when hovered */
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center; /* Centers the text */
+    padding: 14px 16px; /* Adds space inside the anchor element */
+    font-size: 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block; /* Makes the anchor tag behave like a block element */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers the text */
+    padding: 14px 16px; /* Adds space inside the anchor element */
+    text-decoration: none; /* Removes underline from links */
+    font-size: smaller;
+}
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display:grid;
+  }
+/************************HEADER ENDS*********************/
 
 /****************************** FOOTER CSS *****************************/
 
