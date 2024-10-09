@@ -1,9 +1,3 @@
-/* Global reset for margin, padding, and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included within element width/height */
-}
 
 /* General body styling */
 body.contact{
@@ -16,37 +10,6 @@ body.contact{
     text-align: center; /* Centers the content */
     padding: 0; /* Removes padding around the body */
     z-index: -1;
-}
-.text-overlay a{
-    color: white; /* Text color */
-    font-size: 15px; /* Text size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
-}
-.text-overlay p {
-    color: white; /* Text color */
-    font-size: 15px; /* Text size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
-}
-.contact img{
-    width: 100%;
-    height: 500px;
-    max-height: 1000px;
-    object-fit: cover;
-}
-.text-overlay {
-    color: white;
-    font-size: 24px; /* Text size */
-    position: absolute; /* Position text over the image */
-    top: 45%; /* Center vertically */
-    left: 90%; /* Center horizontally */
-    transform: translate(-90%, -30%); /* Center the text */
-    text-align: center; /* Center text alignment */
-    width: 100%; /* Ensure text is centered horizontally */
-    padding: 10px; /* Optional padding around text */
-}
-.text-overlay p{
-    margin: 10px 0;
-    margin-bottom: 10px;
 }
 .contact-container {
     display: flex; /* Enable flexbox */
@@ -65,17 +28,6 @@ body.contact{
     flex: 1; /* Allow the contact details to take up equal or more space */
     text-align: left;
     margin-left: 400px;
-}
-
-.fa-facebook {
-    font-size: 30px; /* Adjust the size */
-    color: #4267B2;  /* Facebook's blue color */
-    margin-right: 10px; /* Optional spacing */
-}
-.fa-whatsapp{
-    font-size: 30px; /* Adjust the size */
-    color: green;  /* Facebook's blue color */
-    margin-right: 10px; /* Optional spacing */
 }
 .location {
     position: relative;
@@ -225,22 +177,6 @@ li a:hover {
     color: #f1f1f1; /* Light text for price */
     margin-top: 10px;
 }
-
-@media (max-width: 768px) {
-    .product-containerr {
-        grid-template-columns: 1fr; /* Stack items in one column on smaller screens */
-    }
-
-    .productt {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-    }
-
-    .productt img {
-        width: 100%; /* Full width image on mobile */
-        max-width: 400px;
-    }
-}
 .fiftyml-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduce min width */
@@ -286,39 +222,6 @@ li a:hover {
 .ml50:hover{
     transform: translateY(-5px);
 }
-
-/********************************INTRO BEGINS******************************/
-.intro {
-    max-width: 1200px; /* Limits the width for better readability on larger screens */
-    margin: 0 auto; /* Centers the content horizontally */
-    padding: 40px 20px;  /*Adds spacious padding */
-    background-color: #f8f1e4; /* A soft, neutral background color */
-    color: #333; /* Dark text for better contrast */
-    text-align: center; /* Centers text */
-    border-radius: 15px; /* Soft rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 20px; /* Adds spacing from the top */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
-}
-
-.intro:hover {
-    transform: translateY(-5px); /* Slightly lift the container on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
-}
-
-.intro h3 {
-    font-size: 1.8rem; /* Adjusted font size for better readability */
-    margin-bottom: 20px; /* Space below heading */
-}
-.about{
-    background-color: rgba(0, 0, 0, 0.153);
-    margin-top: 130px;
-    height: 350px;
-    padding: 30px;
-}
-
-/********************************INTRO ENDS******************************/
-
 /****************************30ML WHITE BEGINS ********************************/
 .thirtyml-container {
     display: grid;
@@ -357,7 +260,7 @@ li a:hover {
     margin: 5px 0;
 }
 
-.price {
+.productt .price {
     font-size: 1em; /* Adjust price text size if needed */
     color: rgb(30, 56, 56);
     margin: 0; /* No margin for compactness */
@@ -366,137 +269,3 @@ li a:hover {
     transform: translateY(-5px);
 }
 /****************************30ML WHITE ENDS ********************************/
-
-/************************HEADER BEGINS*********************/
-
-/* Styling the h5 element */
-h5 {
-    background-color: antiquewhite; /* Sets background color */
-    padding: 10px; /* Adds padding inside the element */
-    width: 100%; /* Makes the h5 span the full width of the page */
-    position: fixed; /* Fixes the h5 element at the top of the viewport */
-    top: 0; /* Positions the element exactly at the top */
-    z-index: 1000; /* Ensures the h5 stays on top of other content */
-    height: 35px; /* Defines the height of the h5, making sure it's consistent */
-}
-.Options{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: black;
-    position: fixed; /* Fixes the ul relative to the viewport */
-    top: 90px; /* Places the ul just below the h5 by matching its height (50px) */
-    z-index: 998; /* Keeps the ul above other content but below the h5 */
-    width: 100%;
-}
-.first > h1{
-    text-align: center;
-    background-color: black;
-    position: fixed; /* Fixes the ul relative to the viewport */
-    top: 35px; /* Places the ul just below the h5 by matching its height (50px) */
-    z-index: 999; /* Keeps the ul above other content but below the h5 */
-    width: 100%;
-    color: whitesmoke;
-    padding: 20px;
-    padding-bottom: 0%;
-}
-
-/* Styling for the links within the list items */
-.Options a {
-    float: left;
-    display: block; /* Makes the anchor tag behave like a block element */
-    color: white; /* Sets text color to white */
-    text-align: center; /* Centers the text */
-    padding: 14px 90px; /* Adds space inside the anchor element */
-    text-decoration: none; /* Removes underline from links */
-    font-size: 20px;
-}
-
-/* Hover effect for the links */
-.Options a:hover, .dropdown .dropbtn:hover {
-    background-color: gray; /* Changes background color when hovered */
-    color: rgb(211, 247, 246); /* Changes text color when hovered */
-    text-decoration: underline; /* Adds underline when hovered */
-}
-.dropdown{
-    float: left;
-    overflow: hidden;
-}
-.dropdown .dropbtn{
-    border: none;
-    outline: none;
-    color: white;
-    text-align: center; /* Centers the text */
-    padding: 14px 16px; /* Adds space inside the anchor element */
-    font-size: 20px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: gray;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a{
-    display: block; /* Makes the anchor tag behave like a block element */
-    color: white; /* Sets text color to white */
-    text-align: center; /* Centers the text */
-    padding: 14px 16px; /* Adds space inside the anchor element */
-    text-decoration: none; /* Removes underline from links */
-    font-size: smaller;
-}
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-    display:grid;
-  }
-/************************HEADER ENDS*********************/
-
-/****************************** FOOTER CSS *****************************/
-
-footer {
-    background-color: whitesmoke;
-    bottom: 0%;
-}
-.footer-content{
-    display: flex;
-    padding: 50px;
-    background-color: antiquewhite;
-    height: 340px;
-    gap: 50px;
-}
-.footer-content ul li a{
-    text-align: left;
-    color: #333;
-    font-size: smaller;
-}
-.footer-content ul{
-    list-style-type: none;
-}
-.collections ul{
-    text-indent: -5%;
-}
-.footer-links h2{
-    text-indent: -20%;
-}
-.footer-copyright{
-    background-color: antiquewhite; /* Sets background color */
-    padding: 2%; /* Adds padding inside the element */
-    width: 100%; /* Makes the h5 span the full width of the page */
-    bottom: 0; /* Positions the element exactly at the top */
-    z-index: 999; /* Ensures the h5 stays on top of other content */
-    height: 10px; /* Defines the height of the h5, making sure it's consistent */
-    text-align: left;
-    font-size:smaller;
-    margin-bottom: 0px ;
-}
-
-/****************************** FOOTER CSS ENDS*****************************/
