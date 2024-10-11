@@ -158,44 +158,41 @@ body {
 /*********************50ML COLOR ENDS************************************/
 
 /****************BUKHOOR BEGINS *****************************/
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 15px; /* Space between products */
-    padding: 20px; /* Padding around the container */
+.bukhoor-section {
+    background-color: #c4bfbf; /* Dark background */
+    color: white; /* Text in white for contrast */
 }
 
-.product {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    border-radius: 15px; /* Rounded corners */
-    padding: 15px; /* Padding inside the card */
-    text-align: center; /* Center the text */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+.bukhoor-item {
+    background-color: #eff1e0; /* Slightly lighter background */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.product img {
-    max-width: 100%; /* Responsive image */
-    border-radius: 10px; /* Rounded corners for images */
-    height: auto; /* Maintain aspect ratio */
+.bukhoor-item img {
+    max-width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
-.product h3 {
-    font-size: 1.2em; /* Adjust heading size */
-    color: #333; /* Dark text color */
-    margin: 10px 0; /* Space above and below the heading */
+.bukhoor-item h3 {
+    font-size: 1.2em;
+    color: #060503; /* A light gold color to match the dark background */
+    margin-bottom: 5px;
 }
 
-.price {
-    font-size: 1.1em; /* Adjust price text size */
-    color: #28a745; /* Green color for price */
-    margin: 5px 0; /* Space around price */
+.bukhoor-item p.price {
+    font-size: 1.1em;
+    color: #020101; /* Subtle gray for the price */
 }
 
-.product:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+.bukhoor-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
+
 
 /****************BUKHOOR ENDS*****************************/
 
